@@ -6,6 +6,7 @@
     box-sizing: border-box;
 }
 
+<<<<<<< Updated upstream
 
 /*mobile menu*/
 
@@ -65,4 +66,60 @@
     color: black;
 
 
+=======
+/* main section for mobile */
+
+#mainimage-container {
+    display: block;
+    height: 100vh;
+    background-image: url(../media/main-image.jpg);
+}
+
+#mainimage {
+    height: 100%;
+}
+
+#mainimage-text-container {
+    position: absolute;
+    width: 100vw;
+    height: 20vh;
+    bottom: 10vh;
+}
+
+#name {
+    font-size: 12vw;
+    color: #fff;
+    text-align: left;
+    margin-left: 10vw;
+}
+
+#shop {
+    font-size: 15vw;
+    color: #fff;
+    text-align: center;
+}
+
+#line {
+    border-bottom: #fff solid 5px;
+    width: 75vw;
+    position: absolute;
+    bottom: 40vh;
+}
+
+/*about section for mobile*/
+
+#about-section {
+    height: 100vh;
+    background-color: #252616;
+}
+
+
+/* media queries */
+
+@media only screen and (min-width: 550px) {
+
+    #mainimage-container {
+        display: none;
+    }
+>>>>>>> Stashed changes
 }
