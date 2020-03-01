@@ -6,7 +6,6 @@
     box-sizing: border-box;
 }
 
-<<<<<<< Updated upstream
 
 /*mobile menu*/
 
@@ -19,33 +18,25 @@
     position: fixed;
     flex-wrap: wrap;
     transition: 1.5s;
+    z-index: 5;
 }
 
 
 .lock-title {
     width: 100vw;
     display: flex;
-
-
 }
 
 .menu-icon-closed {
     height: 20px;
     width: auto;
     margin: 15px 10px auto auto;
-
-
-
 }
 
 .unlock-the-menu {
     font-size: 20px;
     margin: 15px auto auto 0;
-
-
 }
-
-
 
 .dropdown-menu {
     /*    display flex in js*/
@@ -55,7 +46,6 @@
     justify-content: flex-end;
     margin-right: 20px;
     margin-bottom: 20px;
-
 }
 
 .mobile-nav-el {
@@ -64,11 +54,9 @@
     font-size: 50px;
     text-align: end;
     color: black;
+}
 
-
-=======
 /* main section for mobile */
-
 #mainimage-container {
     display: block;
     height: 100vh;
@@ -113,13 +101,9 @@
     background-color: #252616;
 }
 
-
 /* media queries */
 
 @media only screen and (min-width: 550px) {
-
     #mainimage-container {
         display: none;
     }
->>>>>>> Stashed changes
-}

@@ -7,8 +7,6 @@ function menu(element) {
     let dropdown = document.getElementById('dropdown');
 
 
-
-
     if (mobileMenu.style.height == '50px') {
         mobileMenu.style.height = '100vh';
         lock.style.content = 'url(opened.png)';
