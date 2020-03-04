@@ -10,14 +10,14 @@
 /*mobile menu*/
 
 .mobile-menu {
-    background-color: gray;
+    background-color: #FFFFFF;
     width: 100vw;
     /*    height 100vh in js*/
-    height: 50px;
+    height: 70px;
     display: flex;
     position: fixed;
     flex-wrap: wrap;
-    transition: 1.5s;
+    transition: .7s;
     z-index: 5;
 }
 
@@ -25,17 +25,18 @@
 .lock-title {
     width: 100vw;
     display: flex;
+    height: 70px;
 }
 
 .menu-icon-closed {
-    height: 20px;
+    height: 30px;
     width: auto;
-    margin: 15px 10px auto auto;
+    margin: auto 20px auto auto;
 }
 
 .unlock-the-menu {
     font-size: 20px;
-    margin: 15px auto auto 0;
+    margin: auto auto auto 0;
 }
 
 .dropdown-menu {
@@ -54,6 +55,87 @@
     font-size: 50px;
     text-align: end;
     color: black;
+}
+
+/*desktop navigation*/
+aside {
+    display: none;
+}
+
+.nav_container {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    margin: auto;
+    justify-content: space-around;
+    width: 200px;
+    background-color: #e6e6e6;
+    z-index: 3;
+}
+
+.nav_element {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    background-color: #e6e6e6;
+}
+
+.nav_element:hover {
+    background: white;
+}
+
+.nav_title {
+    font-family: 'Crimson Text';
+    margin: auto;
+    margin-bottom: 5px;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.nav_subtitle {
+    font-family: 'Raleway';
+    margin: auto;
+    font-size: .8em;
+    margin-top: 10px;
+
+}
+
+.locker_container {
+    display: block;
+    margin: auto;
+    /*    margin: auto;*/
+}
+
+.nav_locker {
+    width: 15px;
+    /*    margin: auto;*/
+}
+
+.locker_container::before {
+    content: '';
+    display: block;
+    float: left;
+    margin: 10px;
+    width: 50px;
+    height: 2px;
+    background: black;
+}
+
+.locker_container::after {
+    content: '';
+    display: block;
+    float: right;
+    margin: 10px;
+    width: 50px;
+    height: 2px;
+    background: black;
 }
 
 /* main section for mobile */
@@ -165,6 +247,15 @@
         height: 100vh;
     }
 
-    .mobile-menu {
-        display: none;
+
+
+    /* Large devices (laptops/desktops) menu change */
+    @media only screen and (min-width: 992px) {
+        aside {
+            display: flex;
+        }
+
+        header {
+            display: none;
+        }
     }
